@@ -1,0 +1,143 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "callBAW",
+    "version" : "tipSnapshot"
+  },
+  "servers" : [ {
+    "url" : "https://cpd-cp4ba.itzroks-662002krtr-xgjxdd-4b4a324f027aea19c5cbc0c3275c4656-0000.us-east.containers.appdomain.cloud/bas/automationservices/rest/ATH/callBAW"
+  } ],
+  "security" : [ {
+    "basic_auth" : [ ]
+  } ],
+  "paths" : {
+    "/BAW" : {
+      "summary" : "BAW",
+      "post" : {
+        "operationId" : "BAW",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/BAW_input"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "204" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "The request contains invalid parameters, or they are missing.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/callBAWException"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "The requested resource does not exist.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/callBAWException"
+                }
+              }
+            }
+          },
+          "409" : {
+            "description" : "The request cannot be processed because of one or more conflicts in the request.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/callBAWException"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/callBAWException"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "BAW_input" : {
+        "type" : "object",
+        "properties" : {
+          "Input" : {
+            "$ref" : "#/components/schemas/Exception"
+          }
+        },
+        "description" : "Input schema for the operation BAW",
+        "x-ibm-parameter-wrapper" : true
+      },
+      "Exception" : {
+        "type" : "object",
+        "properties" : {
+          "document_state" : {
+            "type" : "string"
+          },
+          "document_stage" : {
+            "type" : "string"
+          },
+          "document_picked" : {
+            "type" : "string"
+          },
+          "process_mode" : {
+            "type" : "string"
+          },
+          "body" : {
+            "type" : "string"
+          }
+        }
+      },
+      "callBAWException" : {
+        "title" : "Exception",
+        "required" : [ "message" ],
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "string",
+            "description" : "Exception code or Message ID of the exception."
+          },
+          "message" : {
+            "type" : "string",
+            "description" : "Message text of the exception."
+          },
+          "message_parameters" : {
+            "type" : "array",
+            "description" : "Message text parameters of the exception.",
+            "items" : {
+              "type" : "string",
+              "description" : "An array of parameter strings that were inserted into the error message."
+            }
+          },
+          "cause" : {
+            "$ref" : "#/components/schemas/callBAWException"
+          }
+        },
+        "description" : "Exception object describing error details."
+      }
+    },
+    "securitySchemes" : {
+      "basic_auth" : {
+        "type" : "http",
+        "scheme" : "basic"
+      }
+    }
+  }
+}

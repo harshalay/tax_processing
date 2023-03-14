@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <InputMessage timestamp="1678390502980" nodeId="FCMComposite_1_1" name="new message 1" id="1678390502980-6">
+        <plainText></plainText>
+    </InputMessage>
+    <InputMessage timestamp="1678725349107" nodeId="FCMComposite_1_4" name="Empty" id="1678725349107-137">
+        <plainText>%7B%22Input%22%3A%7B%0A%09%22document_state%22%3A+%22Luis%2C+Jose%22%2C%0A%09%22document_stage%22%3A+%22Marijuana+possession%22%2C%0A%09%22document_picked%22%3A+%22Yes%22%2C%0A%09%22process_mode%22%3A+%22Preview%22%2C%0A%09%22body%22%3A+%22State+of+TX%22%0A%7D%7D</plainText>
+    </InputMessage>
+</MessagePool>

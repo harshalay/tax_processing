@@ -1,0 +1,234 @@
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/rest_test_flow.msgflow.
+Successfully added file test_rest/rest_test_flow.msgflow to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/estate_tax.msgflow.
+Successfully added file test_rest/estate_tax.msgflow to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/baw_request.msgflow.
+Successfully added file test_rest/baw_request.msgflow to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/Idempotent_flow.msgflow.
+Successfully added file test_rest/Idempotent_flow.msgflow to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/Idempotent_flow_Compute.esql.
+Successfully added file test_rest/Idempotent_flow_Compute.esql to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-Composition-Validation.json.
+Successfully added file test_rest/OpenAPI-Composition-Validation.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-Composition-Validation.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-Computation-Validation.json.
+Successfully added file test_rest/OpenAPI-Computation-Validation.json to BAR file.
+Elapsed time: 0.001 second(s).
+
+Successfully added file test_rest/OpenAPI-Computation-Validation.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-DB-service.json.
+Successfully added file test_rest/OpenAPI-DB-service.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-DB-service.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-TI-Validation.json.
+Successfully added file test_rest/OpenAPI-TI-Validation.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-TI-Validation.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition.json.
+Successfully added file test_rest/OpenAPI-definition.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition1.json.
+Successfully added file test_rest/OpenAPI-definition1.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition1.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition2.json.
+Successfully added file test_rest/OpenAPI-definition2.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition2.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition3.json.
+Successfully added file test_rest/OpenAPI-definition3.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition3.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition4.json.
+Successfully added file test_rest/OpenAPI-definition4.json to BAR file.
+Elapsed time: 0.001 second(s).
+
+Successfully added file test_rest/OpenAPI-definition4.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition5.json.
+Successfully added file test_rest/OpenAPI-definition5.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition5.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/OpenAPI-definition6.json.
+Successfully added file test_rest/OpenAPI-definition6.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/OpenAPI-definition6.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/Remediation-REST.json.
+Successfully added file test_rest/Remediation-REST.json to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/Remediation-REST.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/application.descriptor.
+Successfully added file test_rest/application.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file test_rest/application.descriptor to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/application.descriptor.
+Successfully added file test_rest/application.descriptor to BAR file.
+Elapsed time: 0.001 second(s).
+
+Successfully added file test_rest/application.descriptor to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/baw_request_inputMessage.xml.
+Successfully added file test_rest/baw_request_inputMessage.xml to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/callBAW.json.
+Successfully added file test_rest/callBAW.json to BAR file.
+Elapsed time: 0.001 second(s).
+
+Successfully added file test_rest/callBAW.json to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/estate_tax.subflow.
+Successfully added file test_rest/estate_tax.subflow to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/estate_tax_Compute.esql.
+Successfully added file test_rest/estate_tax_Compute.esql to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/estate_tax_inputMessage.xml.
+Successfully added file test_rest/estate_tax_inputMessage.xml to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/rest_test_flow_inputMessage.xml.
+Successfully added file test_rest/rest_test_flow_inputMessage.xml to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/validation_Compute.esql.
+Successfully added file test_rest/validation_Compute.esql to BAR file.
+
+==============================================
+
+!Tue Mar 14 15:49:08 EDT 2023
+
+Processing file test_rest/validation_inputMessage.xml.
+Successfully added file test_rest/validation_inputMessage.xml to BAR file.

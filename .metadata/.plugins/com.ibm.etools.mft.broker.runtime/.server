@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationServerConnectionParameters Version="11.0.0" serverIpcSocket="/tmp/7ce2d877-8c5a-4881-81b9-5f93d8ec4226.uds" serverName="TEST_SERVER" serverWorkDir="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TEST_SERVER" xmlns="http://www.ibm.com/xmlns/prod/ace/11"/>

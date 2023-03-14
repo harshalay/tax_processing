@@ -1,0 +1,162 @@
+!SESSION 2023-03-14 15:44:12.756 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200420-1602
+java.version=1.8.0_331
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.ibm.etools.msgbroker.tooling.ide -showlocation -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.ibm.etools.msgbroker.tooling.ide -showlocation -data /Users/harshalayadav/IBM/ACET12/workspace/tax_processing -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+
+!ENTRY com.ibm.etools.mft.pattern.support.java 4 0 2023-03-14 15:44:13.562
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.ibm.etools.mft.pattern.support.java [329]
+  Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php
+    -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php; bundle-version="12.0.7.0"; singleton:="true"
+       com.ibm.etools.mft.pattern.support.php [330]
+         Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php.runtime
+           -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php.runtime; bundle-version="12.0.7.0"; singleton:="true"
+              com.ibm.etools.mft.pattern.support.php.runtime [331]
+                Unresolved requirement: Require-Capability: osgi.native; native.paths.0:List<String>="/php/win64/loader.dll"; native.paths.2:List<String>="/php/linux64/libloader.so"; native.paths.1:List<String>="/php/linux/libloader.so"; filter:="(|(&(osgi.native.osname~=win32)(osgi.native.processor~=x86_64))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86_64)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:15.346
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:15.347
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:15.347
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.pattern.capture.annotation' register a package for 'http://www.ibm.com/patternAnnotation/2010'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:15.349
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'org.eclipse.emf.ecore' register a package for 'http://www.eclipse.org/emf/2002/Ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:15.359
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.jface 2 0 2023-03-14 15:44:17.518
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-03-14 15:44:17.518
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.copyInstance,Copy Result,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@293dd4b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25a81f28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:18.726
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:18.742
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:18.742
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.jface.text 2 0 2023-03-14 15:44:21.227
+!MESSAGE Duplicate template id: 'com.ibm.datatools.sqlxeditor.templates.xmlnamespaces2'
+!SESSION 2023-03-14 15:44:28.153 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200420-1602
+java.version=1.8.0_331
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+
+!ENTRY com.ibm.etools.mft.pattern.support.java 4 0 2023-03-14 15:44:28.936
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.ibm.etools.mft.pattern.support.java [329]
+  Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php
+    -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php; bundle-version="12.0.7.0"; singleton:="true"
+       com.ibm.etools.mft.pattern.support.php [330]
+         Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php.runtime
+           -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php.runtime; bundle-version="12.0.7.0"; singleton:="true"
+              com.ibm.etools.mft.pattern.support.php.runtime [331]
+                Unresolved requirement: Require-Capability: osgi.native; native.paths.0:List<String>="/php/win64/loader.dll"; native.paths.2:List<String>="/php/linux64/libloader.so"; native.paths.1:List<String>="/php/linux/libloader.so"; filter:="(|(&(osgi.native.osname~=win32)(osgi.native.processor~=x86_64))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86_64)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:43.158
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:43.159
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'com.ibm.etools.mft.gef.emf' register a package for 'http://www.ibm.com/wbi/2005/eflow_utility'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:43.159
+!MESSAGE Both 'com.ibm.etools.mft.fcb' and 'com.ibm.etools.mft.pattern.capture.annotation' register a package for 'http://www.ibm.com/patternAnnotation/2010'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:43.161
+!MESSAGE Both 'com.ibm.etools.mft.gef.emf' and 'org.eclipse.emf.ecore' register a package for 'http://www.eclipse.org/emf/2002/Ecore'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-03-14 15:44:43.168
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.jface 2 0 2023-03-14 15:44:44.645
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-03-14 15:44:44.645
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.copyInstance,Copy Result,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7dcc6679,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44ad3c5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:45.665
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:45.665
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2023-03-14 15:44:45.666
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.jface.text 2 0 2023-03-14 15:44:47.086
+!MESSAGE Duplicate template id: 'com.ibm.datatools.sqlxeditor.templates.xmlnamespaces2'
+
+!ENTRY com.ibm.mq.runtime 4 0 2023-03-14 15:44:52.990
+!MESSAGE WebSphere MQ install location is not found.
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2023-03-14 15:45:29.236
+!MESSAGE 

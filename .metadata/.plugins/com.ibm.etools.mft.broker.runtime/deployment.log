@@ -1,0 +1,6 @@
+test_rest>>>>TEST_SERVER>>SUCCESS>>1678823220874
+BIP9332I<<Application 'test_rest' has been created successfully. <<1678823220874
+BIP9326I<<The source 'test_restproject.TestMode.bar' has been successfully deployed. <<1678823220874
+test_rest>>>>TEST_SERVER>>SUCCESS>>1678823348945
+BIP9332I<<Application 'test_rest' has been changed successfully. <<1678823348945
+BIP9326I<<The source 'test_restproject.TestMode.bar' has been successfully deployed. <<1678823348945

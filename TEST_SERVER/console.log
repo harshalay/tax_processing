@@ -1,0 +1,79 @@
+2023-03-14 15:46:38.282700: BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '12.0.7.0' (64-bit) 
+ImbMain::start() - failed to acquire execution group lock - duplicate execution group processes?
+2023-03-14 15:46:38.284236: BIP2112E: IBM App Connect Enterprise internal error: diagnostic information 'Failed to acquire execution group lock - duplicate execution group processes?', 'ImbFile::WriteLock::WriteLock() reported 'Failed to acquire write lock on file' with values... ''Failed to acquire write lock on file'' ''/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TEST_SERVER/config/components/2023-03-14 15:47:00.878753: BIP2152I: Configuration message received. 
+2023-03-14 15:47:00.939657: BIP2155I: About to 'Initialize' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 15:47:02.670801: BIP2155I: About to 'Start' the deployed resource 'test_rest' of type 'Application'. 
+An http endpoint was registered on port '7803', path '/test'.
+2023-03-14 15:47:02.718324: BIP3132I: The HTTP Listener has started listening on port '7803' for 'http' connections. 
+2023-03-14 15:47:02.718408: BIP1996I: Listening on HTTP URL '/test'. 
+Started native listener for HTTP input node on port 7803 for URL /test
+2023-03-14 15:47:02.718550: BIP2269I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/CallBAW'.
+2023-03-14 15:47:02.718823: BIP1996I: Listening on HTTP URL '/CallBAW'. 
+Started native listener for HTTP input node on port 7803 for URL /CallBAW
+An http endpoint was registered on port '7803', path '/baw'.
+2023-03-14 15:47:02.719064: BIP1996I: Listening on HTTP URL '/baw'. 
+Started native listener for HTTP input node on port 7803 for URL /baw
+2023-03-14 15:47:02.719172: BIP2269I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/post'.
+2023-03-14 15:47:02.719440: BIP1996I: Listening on HTTP URL '/post'. 
+Started native listener for HTTP input node on port 7803 for URL /post
+2023-03-14 15:47:02.719550: BIP2269I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/store'.
+2023-03-14 15:47:02.719817: BIP1996I: Listening on HTTP URL '/store'. 
+Started native listener for HTTP input node on port 7803 for URL /store
+An http endpoint was registered on port '7803', path '/test'.
+2023-03-14 15:47:02.719962: BIP1996I: Listening on HTTP URL '/test'. 
+Started native listener for HTTP input node on port 7803 for URL /test
+2023-03-14 15:47:02.720122: BIP2269I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') started successfully. 
+2023-03-14 15:47:02.720243: BIP9332I: Application 'test_rest' has been created successfully. 
+2023-03-14 15:47:02.720333: BIP9326I: The source 'test_restproject.TestMode.bar' has been successfully deployed. 
+2023-03-14 15:47:02.720833: BIP2154I: Integration server finished with Configuration message. 
+2023-03-14 15:47:42.475220: BIP3120E: Exception condition detected on input node 'estate_tax.HTTP Input'. 
+2023-03-14 15:47:42.476060: BIP2230E: Error detected whilst processing a message in node 'estate_tax.Compute'. 
+2023-03-14 15:47:42.476124: BIP2488E:  (.validation_Compute.Main, 4.4) Error detected whilst executing the SQL statement 'CALL CopyEntireMessage();'. 
+2023-03-14 15:47:42.476168: BIP2934E: Error detected whilst executing the function or procedure 'CopyEntireMessage'. 
+2023-03-14 15:47:42.476212: BIP2488E:  (.validation_Compute.CopyEntireMessage, 3.3) Error detected whilst executing the SQL statement 'PROPAGATE TO TERMINAL 'out4' FINALIZE DEFAULT DELETE DEFAULT;'. 
+2023-03-14 15:47:42.476268: BIP2230E: Error detected whilst processing a message in node 'estate_tax.estate_tax.Compute'. 
+2023-03-14 15:47:42.476304: BIP2488E:  (.estate_tax_Compute.Main, 4.4) Error detected whilst executing the SQL statement 'CALL CopyEntireMessage();'. 
+2023-03-14 15:47:42.476352: BIP2934E: Error detected whilst executing the function or procedure 'CopyEntireMessage'. 
+2023-03-14 15:47:42.476416: BIP2488E:  (.estate_tax_Compute.CopyEntireMessage, 3.3) Error detected whilst executing the SQL statement 'PROPAGATE TO TERMINAL 'out1' FINALIZE DEFAULT DELETE DEFAULT;'. 
+2023-03-14 15:47:42.476452: BIP2230E: Error detected whilst processing a message in node 'estate_tax.estate_tax.Composition_validation'. 
+2023-03-14 15:47:42.476492: BIP6375E: REST request node 'estate_tax.estate_tax.Composition_validation' failed to invoke the operation 'validate'. 
+2023-03-14 15:47:42.476528: BIP6373E: REST request node 'estate_tax.estate_tax.Composition_validation' invoked the operation 'validate'. The operation was unsuccessful. HTTP status code: '500', response headers: '323' bytes, response body: '109' bytes, total request time: '263' ms. 
+2023-03-14 15:49:08.947088: BIP2152I: Configuration message received. 
+2023-03-14 15:49:08.983306: BIP2155I: About to 'Stop' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 15:49:12.994678: BIP2271I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') successfully stopped. 
+2023-03-14 15:49:13.674589: BIP2271I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') successfully stopped. 
+2023-03-14 15:49:13.674720: BIP2271I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') successfully stopped. 
+2023-03-14 15:49:13.737712: BIP2271I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') successfully stopped. 
+2023-03-14 15:49:13.737828: BIP2155I: About to 'TearDown' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 15:49:13.809747: BIP3133I: The HTTP Listener has stopped listening on port '7803' for 'http' connections. 
+2023-03-14 15:49:13.919773: BIP2155I: About to 'Initialize' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 15:49:14.276077: BIP2155I: About to 'Start' the deployed resource 'test_rest' of type 'Application'. 
+An http endpoint was registered on port '7803', path '/test'.
+2023-03-14 15:49:14.337850: BIP3132I: The HTTP Listener has started listening on port '7803' for 'http' connections. 
+2023-03-14 15:49:14.337922: BIP1996I: Listening on HTTP URL '/test'. 
+Started native listener for HTTP input node on port 7803 for URL /test
+2023-03-14 15:49:14.338055: BIP2269I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/CallBAW'.
+2023-03-14 15:49:14.338272: BIP1996I: Listening on HTTP URL '/CallBAW'. 
+Started native listener for HTTP input node on port 7803 for URL /CallBAW
+An http endpoint was registered on port '7803', path '/baw'.
+2023-03-14 15:49:14.338465: BIP1996I: Listening on HTTP URL '/baw'. 
+Started native listener for HTTP input node on port 7803 for URL /baw
+2023-03-14 15:49:14.338565: BIP2269I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/post'.
+2023-03-14 15:49:14.338768: BIP1996I: Listening on HTTP URL '/post'. 
+Started native listener for HTTP input node on port 7803 for URL /post
+2023-03-14 15:49:14.338871: BIP2269I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7803', path '/store'.
+2023-03-14 15:49:14.339064: BIP1996I: Listening on HTTP URL '/store'. 
+Started native listener for HTTP input node on port 7803 for URL /store
+An http endpoint was registered on port '7803', path '/test'.
+2023-03-14 15:49:14.339205: BIP1996I: Listening on HTTP URL '/test'. 
+Started native listener for HTTP input node on port 7803 for URL /test
+2023-03-14 15:49:14.339308: BIP2269I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') started successfully. 
+2023-03-14 15:49:14.339367: BIP9332I: Application 'test_rest' has been changed successfully. 
+2023-03-14 15:49:14.339426: BIP9326I: The source 'test_restproject.TestMode.bar' has been successfully deployed. 
+2023-03-14 15:49:14.339947: BIP2154I: Integration server finished with Configuration message. 

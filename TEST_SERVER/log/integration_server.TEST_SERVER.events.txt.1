@@ -1,0 +1,59 @@
+2023-03-14 19:46:27.923364Z: [Thread 31367927] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '12.0.7.0' (64-bit) 
+2023-03-14 19:46:27.928802Z: [Thread 31367927] (Msg 1/1) BIP9905I: Initializing resource managers. 
+2023-03-14 19:46:36.567340Z: [Thread 31367927] (Msg 1/1) BIP9906I: Reading deployed resources. 
+2023-03-14 19:46:37.185396Z: [Thread 31368091] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2023-03-14 19:46:37.192592Z: [Thread 31368091] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7604' for 'RestAdmin http' connections. 
+2023-03-14 19:46:37.197244Z: [Thread 31367927] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2023-03-14 19:47:00.878753Z: [Thread 31367955] (Msg 1/1) BIP2152I: Configuration message received. 
+2023-03-14 19:47:00.939657Z: [Thread 31367955] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:47:02.670801Z: [Thread 31367955] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:47:02.718324Z: [Thread 31367955] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'http' connections. 
+2023-03-14 19:47:02.718408Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/test'. 
+2023-03-14 19:47:02.718550Z: [Thread 31367955] (Msg 1/1) BIP2269I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') started successfully. 
+2023-03-14 19:47:02.718823Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/CallBAW'. 
+2023-03-14 19:47:02.719064Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/baw'. 
+2023-03-14 19:47:02.719172Z: [Thread 31367955] (Msg 1/1) BIP2269I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') started successfully. 
+2023-03-14 19:47:02.719440Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/post'. 
+2023-03-14 19:47:02.719550Z: [Thread 31367955] (Msg 1/1) BIP2269I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') started successfully. 
+2023-03-14 19:47:02.719817Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/store'. 
+2023-03-14 19:47:02.719962Z: [Thread 31367955] (Msg 1/1) BIP1996I: Listening on HTTP URL '/test'. 
+2023-03-14 19:47:02.720122Z: [Thread 31367955] (Msg 1/1) BIP2269I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') started successfully. 
+2023-03-14 19:47:02.720243Z: [Thread 31367955] (Msg 1/1) BIP9332I: Application 'test_rest' has been created successfully. 
+2023-03-14 19:47:02.720333Z: [Thread 31367955] (Msg 1/1) BIP9326I: The source 'test_restproject.TestMode.bar' has been successfully deployed. 
+2023-03-14 19:47:02.720833Z: [Thread 31367955] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2023-03-14 19:47:42.475220Z: [Thread 31368885] (Msg 1/12) BIP3120E: Exception condition detected on input node 'estate_tax.HTTP Input'. 
+2023-03-14 19:47:42.476060Z: [Thread 31368885] (Msg 2/12) BIP2230E: Error detected whilst processing a message in node 'estate_tax.Compute'. 
+2023-03-14 19:47:42.476124Z: [Thread 31368885] (Msg 3/12) BIP2488E:  (.validation_Compute.Main, 4.4) Error detected whilst executing the SQL statement 'CALL CopyEntireMessage();'. 
+2023-03-14 19:47:42.476168Z: [Thread 31368885] (Msg 4/12) BIP2934E: Error detected whilst executing the function or procedure 'CopyEntireMessage'. 
+2023-03-14 19:47:42.476212Z: [Thread 31368885] (Msg 5/12) BIP2488E:  (.validation_Compute.CopyEntireMessage, 3.3) Error detected whilst executing the SQL statement 'PROPAGATE TO TERMINAL 'out4' FINALIZE DEFAULT DELETE DEFAULT;'. 
+2023-03-14 19:47:42.476268Z: [Thread 31368885] (Msg 6/12) BIP2230E: Error detected whilst processing a message in node 'estate_tax.estate_tax.Compute'. 
+2023-03-14 19:47:42.476304Z: [Thread 31368885] (Msg 7/12) BIP2488E:  (.estate_tax_Compute.Main, 4.4) Error detected whilst executing the SQL statement 'CALL CopyEntireMessage();'. 
+2023-03-14 19:47:42.476352Z: [Thread 31368885] (Msg 8/12) BIP2934E: Error detected whilst executing the function or procedure 'CopyEntireMessage'. 
+2023-03-14 19:47:42.476416Z: [Thread 31368885] (Msg 9/12) BIP2488E:  (.estate_tax_Compute.CopyEntireMessage, 3.3) Error detected whilst executing the SQL statement 'PROPAGATE TO TERMINAL 'out1' FINALIZE DEFAULT DELETE DEFAULT;'. 
+2023-03-14 19:47:42.476452Z: [Thread 31368885] (Msg 10/12) BIP2230E: Error detected whilst processing a message in node 'estate_tax.estate_tax.Composition_validation'. 
+2023-03-14 19:47:42.476492Z: [Thread 31368885] (Msg 11/12) BIP6375E: REST request node 'estate_tax.estate_tax.Composition_validation' failed to invoke the operation 'validate'. 
+2023-03-14 19:47:42.476528Z: [Thread 31368885] (Msg 12/12) BIP6373E: REST request node 'estate_tax.estate_tax.Composition_validation' invoked the operation 'validate'. The operation was unsuccessful. HTTP status code: '500', response headers: '323' bytes, response body: '109' bytes, total request time: '263' ms. 
+2023-03-14 19:49:08.947088Z: [Thread 31367949] (Msg 1/1) BIP2152I: Configuration message received. 
+2023-03-14 19:49:08.983306Z: [Thread 31367949] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:49:12.994678Z: [Thread 31367949] (Msg 1/1) BIP2271I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') successfully stopped. 
+2023-03-14 19:49:13.674589Z: [Thread 31367949] (Msg 1/1) BIP2271I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') successfully stopped. 
+2023-03-14 19:49:13.674720Z: [Thread 31367949] (Msg 1/1) BIP2271I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') successfully stopped. 
+2023-03-14 19:49:13.737712Z: [Thread 31367949] (Msg 1/1) BIP2271I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') successfully stopped. 
+2023-03-14 19:49:13.737828Z: [Thread 31367949] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:49:13.809747Z: [Thread 31367949] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7803' for 'http' connections. 
+2023-03-14 19:49:13.919773Z: [Thread 31367949] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:49:14.276077Z: [Thread 31367949] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'test_rest' of type 'Application'. 
+2023-03-14 19:49:14.337850Z: [Thread 31367949] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7803' for 'http' connections. 
+2023-03-14 19:49:14.337922Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/test'. 
+2023-03-14 19:49:14.338055Z: [Thread 31367949] (Msg 1/1) BIP2269I: Deployed resource 'Idempotent_flow' (uuid='Idempotent_flow',type='MessageFlow') started successfully. 
+2023-03-14 19:49:14.338272Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/CallBAW'. 
+2023-03-14 19:49:14.338465Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/baw'. 
+2023-03-14 19:49:14.338565Z: [Thread 31367949] (Msg 1/1) BIP2269I: Deployed resource 'baw_request' (uuid='baw_request',type='MessageFlow') started successfully. 
+2023-03-14 19:49:14.338768Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/post'. 
+2023-03-14 19:49:14.338871Z: [Thread 31367949] (Msg 1/1) BIP2269I: Deployed resource 'estate_tax' (uuid='estate_tax',type='MessageFlow') started successfully. 
+2023-03-14 19:49:14.339064Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/store'. 
+2023-03-14 19:49:14.339205Z: [Thread 31367949] (Msg 1/1) BIP1996I: Listening on HTTP URL '/test'. 
+2023-03-14 19:49:14.339308Z: [Thread 31367949] (Msg 1/1) BIP2269I: Deployed resource 'rest_test_flow' (uuid='rest_test_flow',type='MessageFlow') started successfully. 
+2023-03-14 19:49:14.339367Z: [Thread 31367949] (Msg 1/1) BIP9332I: Application 'test_rest' has been changed successfully. 
+2023-03-14 19:49:14.339426Z: [Thread 31367949] (Msg 1/1) BIP9326I: The source 'test_restproject.TestMode.bar' has been successfully deployed. 
+2023-03-14 19:49:14.339947Z: [Thread 31367949] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 

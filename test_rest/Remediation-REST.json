@@ -1,0 +1,160 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Remediation REST",
+    "version" : "tipSnapshot"
+  },
+  "servers" : [ {
+    "url" : "https://cpd-cp4ba.itzroks-270000fttm-84tfmi-4b4a324f027aea19c5cbc0c3275c4656-0000.us-east.containers.appdomain.cloud/bas/automationservices/rest/ETM/Remediation%20REST"
+  } ],
+  "security" : [ {
+    "basic_auth" : [ ]
+  } ],
+  "paths" : {
+    "/CallBAW" : {
+      "summary" : "CallBAW",
+      "post" : {
+        "operationId" : "CallBAW",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CallBAW_input"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CallBAW_output"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "The request contains invalid parameters, or they are missing.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Remediation_RESTException"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "The requested resource does not exist.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Remediation_RESTException"
+                }
+              }
+            }
+          },
+          "409" : {
+            "description" : "The request cannot be processed because of one or more conflicts in the request.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Remediation_RESTException"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Internal server error.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Remediation_RESTException"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "CallBAW_input" : {
+        "type" : "object",
+        "properties" : {
+          "Input" : {
+            "$ref" : "#/components/schemas/Exception"
+          }
+        },
+        "description" : "Input schema for the operation CallBAW",
+        "x-ibm-parameter-wrapper" : true
+      },
+      "CallBAW_output" : {
+        "type" : "object",
+        "properties" : {
+          "Input" : {
+            "$ref" : "#/components/schemas/Exception"
+          }
+        },
+        "description" : "Response schema of operation CallBAW",
+        "x-ibm-parameter-wrapper" : true
+      },
+      "Exception" : {
+        "type" : "object",
+        "properties" : {
+          "document_state" : {
+            "type" : "string"
+          },
+          "document_stage" : {
+            "type" : "string"
+          },
+          "document_picked" : {
+            "type" : "string"
+          },
+          "process_mode" : {
+            "type" : "string"
+          },
+          "body" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Remediation_RESTException" : {
+        "title" : "Exception",
+        "required" : [ "message" ],
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "string",
+            "description" : "Exception code or Message ID of the exception."
+          },
+          "message" : {
+            "type" : "string",
+            "description" : "Message text of the exception."
+          },
+          "message_parameters" : {
+            "type" : "array",
+            "description" : "Message text parameters of the exception.",
+            "items" : {
+              "type" : "string",
+              "description" : "An array of parameter strings that were inserted into the error message."
+            }
+          },
+          "cause" : {
+            "$ref" : "#/components/schemas/Remediation_RESTException"
+          }
+        },
+        "description" : "Exception object describing error details."
+      }
+    },
+    "securitySchemes" : {
+      "basic_auth" : {
+        "type" : "http",
+        "scheme" : "basic"
+      }
+    }
+  }
+}

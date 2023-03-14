@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="baw_request" deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+    <ConfigurableProperty uri="baw_request#BAW.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.securityIdentity" override="myrestsec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#BAW.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.securityIdentity" override="myrestsec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.securityProfileName" override="NULL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#CallBAW.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.URLSpecifier" override="/CallBAW">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.URLSpecifier" override="/baw">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Input1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Reply.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Reply1.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#HTTP Reply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="baw_request#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="Idempotent_flow" deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Composition_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.URLSpecifier" override="/test">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP INPUT XML.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP Reply1.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#HTTP Reply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#TI_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#computation_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.protocol">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#storeXML.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="Idempotent_flow#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="estate_tax" type="subflow" deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+    <ConfigurableProperty uri="estate_tax#Computation_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Computation_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#TI_Validation.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="estate_tax" deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+    <ConfigurableProperty uri="estate_tax#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.URLSpecifier" override="/post">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Reply.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Other tax type.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Other tax type.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Personal tax.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#Personal tax.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="estate_tax#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="rest_test_flow" deployBarfile="/Users/harshalayadav/IBM/ACET12/workspace/tax_processing/TestModeBarFiles/test_restproject.TestMode.bar" deployTimestamp="2023-03-14 19:49:08">
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#Composition_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.URLSpecifier" override="/store">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.URLSpecifier" override="/test">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Input1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Reply.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Reply1.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#HTTP Reply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#TI_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#computation_validation.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.acceptCompressedResponses" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.allowedCiphers">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.baseURL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.enableCRLCheck">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.enableKeepAlive">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.hostnameChecking">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.httpProxyLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.keyAlias">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.protocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.requestCompressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.timeoutForServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#storeXML.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="rest_test_flow#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>
